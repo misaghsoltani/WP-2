@@ -1,2 +1,15 @@
-/* CSS Document */
+/*CSS Document */
+/*add a gradient background */
+#cl {
+	height: 200px; 
+	background-color: #6454f0; /* For browsers that do not support gradients */
+	/*background-image: linear-gradient(to bottom right, #6ee2f5, #6454f0);*/
+}
+
+html {
+	height: 100%;
+	background-color: #6454f0; /* For browsers that do not support gradients */
+	background-image: linear-gradient(to bottom right, #cc2b5e, #753a88);
+	background-repeat:no-repeat;
+}
 
