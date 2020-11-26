@@ -1,15 +1,49 @@
 /*CSS Document */
-/*add a gradient background */
-#cl {
-	height: 200px; 
-	background-color: #6454f0; /* For browsers that do not support gradients */
-	/*background-image: linear-gradient(to bottom right, #6ee2f5, #6454f0);*/
+
+@font-face {
+    font-family: IRANSansWeb;
+    src: url("fonts/IRANSansWeb(FaNum).woff");
 }
 
+/*@font-face {
+  font-family: IRANSansWeb;
+  src: url('fonts/IRANSansWeb(FaNum).woff');/* format('woff'),
+       url('fonts/iransans_fa_num.ttf') format('truetype');
+}*/
+
+/*add a gradient background */
 html {
 	height: 100%;
 	background-color: #6454f0; /* For browsers that do not support gradients */
 	background-image: linear-gradient(to right, #cc2b5e, #753a88);
 	background-repeat:no-repeat;
+	dir: rtl;
+}
+
+.main-center-div {
+	position: relative;
+	height: 500px;
+	width: 500px;
+	background-color: #fff;
+	border-radius: 10px;
+	margin: 0 auto;
+	top: 100px;
+	font-family: i
+}
+
+.main-form{
+	font-family: IRANSansWeb;
+}
+
+label {
+	font-family: IRANSansWeb;
+}
+
+body {
+	font-family: IRANSansWeb;
+}
+
+.tst{
+	font-family: IRANSansWeb;
 }
 
