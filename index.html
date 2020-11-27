@@ -21,14 +21,30 @@
 					</div>
 				</div> <br>
 				<div class="row">
-					<div class="col1 col col1-radio">	
-						<label for="label-family">نام‌خانوادگی</label> <br>
+					<div class="col1 col">	
+						<label for="label-name">عنوان</label><br>
+						<select class="select-input">
+							<option value="0">- انتخاب کنید -</option>
+							<option value="1">آقا</option>
+							<option value="2">خانم</option>
+							<option value="3">غیره</option>
+						</select>					
+					</div>
+					<div class="col2 col">
+						<label for="label-family">نام و نام خانوادگی انگلیسی</label> <br>
+						<input type="text" name="input-family" class="text-input"/>
+					</div>
+				</div> <br>
+				<div class="row">
+					<div class="col1 col ">	
+						<label for="label-family">نام و نام خانوادگی انگلیسی</label> <br>
 						<input type="text" name="input-family" class="text-input"/>
 					</div>
 					<div class="col2 col col2-radio">
-						<label for="label-name">عنوان</label><br>
-						<input type="radio" name="input-radio" class="radio-input">آقا</input>
-						<input type="radio" name="input-radio" class="radio-input">خانم</input>
+						<label for="label-gender">عنوان</label><br>
+						<input type="radio" name="input-radio" class="radio-input ardio-input1">آقا</input>
+						<input type="radio" name="input-radio" class="radio-input radio-input2">خانم</input>
+						<input type="radio" name="input-radio" class="radio-input radio-input3">غیره</input>
 					</div>
 				</div> <br>
 			</form>
