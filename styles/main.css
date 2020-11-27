@@ -95,14 +95,15 @@ label {
 	padding: 0 20px;
     color: #666;
 	margin-top: 25px;
+	margin-right: -87px;
 }
 
 .col1-radio, .col2-radio {
 	/*width: calc(50% / 2);*/
 }
 
-.col2-radio {
-	width: 202px;
+.col1-radio {
+	width: 218px;
 	float: right;
 }
 
@@ -112,6 +113,7 @@ label {
 
 .radio-input3 {
 	margin-right: 15px;
+	margin-left: 
 }
 
 .radio-input1 {
@@ -129,3 +131,29 @@ label {
 	height: 50px;
 }
 
+.add-input {
+	width: 460px;
+}
+
+.col-fav {
+	width: 200px;
+}
+
+input[type="submit"] {
+	display: inline-block;
+    line-height: 50px;
+    padding: 0 50px;
+	transition: all 0.4s ease;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+	background: #4272d7;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	font-family: IRANSansWeb;
+}
+
+input[type="submit"]:hover {
+	background: #3868cd;
+}

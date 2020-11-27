@@ -12,11 +12,11 @@
 			<form class="main-form" action="index.php" method="post">
 				<div class="row">
 					<div class="col1 col">	
-						<label for="label-name">نام</label><br>
+						<label for="label-name">نام*</label><br>
 						<input type="text" name="input-name" class="text-input"/>					
 					</div>
 					<div class="col2 col">
-						<label for="label-family">نام خانوادگی</label> <br>
+						<label for="label-family">*نام خانوادگی</label> <br>
 						<input type="text" name="input-family" class="text-input"/>
 					</div>
 				</div> <br>
@@ -31,20 +31,65 @@
 						</select>					
 					</div>
 					<div class="col2 col">
-						<label for="label-family">نام و نام خانوادگی انگلیسی</label> <br>
-						<input type="text" name="input-family" class="text-input"/>
+						<label for="label-english-name">نام و نام خانوادگی انگلیسی</label> <br>
+						<input type="text" name="input-english-name" class="text-input"/>
 					</div>
 				</div> <br>
 				<div class="row">
 					<div class="col1 col ">	
-						<label for="label-family">نام و نام خانوادگی انگلیسی</label> <br>
-						<input type="text" name="input-family" class="text-input"/>
+						<label for="label-email">پست الکترونیکی*</label> <br>
+						<input type="text" name="input-email" class="text-input"/>
 					</div>
-					<div class="col2 col col2-radio">
-						<label for="label-gender">عنوان</label><br>
-						<input type="radio" name="input-radio" class="radio-input ardio-input1">آقا</input>
-						<input type="radio" name="input-radio" class="radio-input radio-input2">خانم</input>
-						<input type="radio" name="input-radio" class="radio-input radio-input3">غیره</input>
+					<div class="col2 col ">	
+						<label for="label-phone">شماره تلفن همراه*</label> <br>
+						<input type="text" name="input-phone" class="text-input"/>
+					</div>
+				</div> <br>
+				<div class="row">
+					<div class="col1 col">	
+						<label for="label-code">کد ملی</label><br>
+						<input type="text" name="input-code" class="text-input"/>					
+					</div>
+					<div class="col2 col">
+						<label for="label-password">*رمز عبور</label> <br>
+						<input type="text" name="input-passowrd" class="text-input"/>
+					</div>
+				</div> <br>
+				<div class="row">
+					<div class="col1 col">	
+						<label for="label-pass-repeat">تکرار رمز عبور*</label><br>
+						<input type="text" name="input-pass-repeat" class="text-input"/>					
+					</div>
+					<div class="col2 col">
+						<label for="label-bd">تاریخ تولد</label> <br>
+						<input type="text" name="input-bd" class="text-input"/>
+					</div>
+				</div> <br>
+				<div class="row">
+					<div class="col1 col col1-add">	
+						<label for="label-add">آدرس</label><br>
+						<input type="text" name="input-add" class="text-input add-input"/>
+					</div>
+				</div> <br>
+				<div class="row">
+					<div class="col1 col col1-radio">
+						<label for="label-gender">وضعیت تأهل*</label><br>
+						<input type="radio" name="input-radio" class="radio-input ardio-input1">مجرد</input>
+						<input type="radio" name="input-radio" class="radio-input radio-input2">متأهل</input>
+					</div>
+					<div class="col2 col col-fav">
+						<label for="label-gender">علاقه‌مندی‌ها</label><br>
+						<input type="checkbox" name="input-checkbox1" id="checkbox1" class="radio-input radio-input1">کتاب</input>
+						<input type="checkbox" name="input-checkbox2" id="checkbox2" class="radio-input radio-input2">فیلم</input>
+						<input type="checkbox" name="input-checkbox3" id="checkbox3" class="radio-input radio-input3">موسیقی</input>
+					</div>
+				</div> <br>
+				<div class="row">
+					
+				</div> <br> <br>
+				<div class="row">
+					<div class="col1 col col-submit">
+						<input type="submit" value="ثبت‌نام" onClick="return validate();">
 					</div>
 				</div> <br>
 			</form>
