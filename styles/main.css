@@ -1,15 +1,11 @@
 /*CSS Document */
 
-@font-face {
-    font-family: IRANSansWeb;
-    src: url("fonts/IRANSansWeb(FaNum).woff");
-}
 
-/*@font-face {
+@font-face {
   font-family: IRANSansWeb;
-  src: url('fonts/IRANSansWeb(FaNum).woff');/* format('woff'),
-       url('fonts/iransans_fa_num.ttf') format('truetype');
-}*/
+  src: url('../fonts/IRANSansWeb(FaNum).woff') format('woff'),
+       url('../fonts/iransans_fa_num.ttf') format('truetype');
+}
 
 /*add a gradient background */
 html {
@@ -18,32 +14,81 @@ html {
 	background-image: linear-gradient(to right, #cc2b5e, #753a88);
 	background-repeat:no-repeat;
 	dir: rtl;
+	font-family: IRANSansWeb;
+	background-attachment: fixed;
 }
 
 .main-center-div {
 	position: relative;
-	height: 500px;
-	width: 500px;
+	/*height: 500px;*/
 	background-color: #fff;
 	border-radius: 10px;
+	display: inline-block;
+	padding: 50px 100px;
 	margin: 0 auto;
-	top: 100px;
-	font-family: i
-}
-
-.main-form{
-	font-family: IRANSansWeb;
-}
-
-label {
-	font-family: IRANSansWeb;
+	text-align: right;
+	width: fit-content;
 }
 
 body {
-	font-family: IRANSansWeb;
+	text-align: center;
+	padding: 100px 0;
+	margin: 0 auto;
 }
 
-.tst{
+label {
+	float: right;
+}
+
+input {
+}
+
+.col {
+	display: inline-block;
+	width: calc((100% - 20px) / 2);
+}
+
+.col1 {
+	margin-left: 10px;
+}
+
+.col2 {
+	margin-right: 10px;
+}
+
+.text-input {
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+	line-height: 50px;
+	background: #fafafa;
+	border-radius: 5px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #666;
 	font-family: IRANSansWeb;
+	border: none;
+	outline: none;
+}
+
+h1 {
+	float: right;
+	width: 400px;
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	float: right;
+	margin-bottom: 20px;
+}
+
+form {
+	display: block;
+}
+
+label {
+	margin-bottom: 5px;
 }
 
