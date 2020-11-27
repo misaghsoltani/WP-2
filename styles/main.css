@@ -40,12 +40,9 @@ label {
 	float: right;
 }
 
-input {
-}
-
 .col {
 	display: inline-block;
-	width: calc((100% - 20px) / 2);
+	width: calc((100% - 30px) / 2);
 }
 
 .col1 {
@@ -71,7 +68,6 @@ input {
 
 h1 {
 	float: right;
-	width: 400px;
 	margin-bottom: 40px;
 	width: 100%;
 	position: relative;
@@ -90,5 +86,17 @@ form {
 
 label {
 	margin-bottom: 5px;
+}
+
+.radio-input {
+	background: #fafafa;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+	line-height: 50px;
+	padding: 0 20px;
+    color: #666;
+}
+
+.col1-radio, .col2-radio {
+	width: calc((100% - 30px) / 2);
 }
 
