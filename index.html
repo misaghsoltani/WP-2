@@ -3,90 +3,105 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="styles/main.css">
+		<script type="text/javascript" src="scripts/main.js"></script>
 		<title>ورود اطلاعات</title>
 	</head>
 	
 	<body>
 		<div class="main-center-div">
 			<h1>ورود اطلاعات ثبت‌نام</h1> <br>
-			<form class="main-form" action="index.php" method="post">
+			<p id="pp">dsfsdfsdfsdf</p>
+			<form class="main-form" action="" method="post">
 				<div class="row">
 					<div class="col1 col">	
 						<label for="label-name">نام*</label><br>
-						<input type="text" name="input-name" class="text-input"/>					
+						<input type="text" name="input-name" class="text-input" onkeypress="return isPersianChar(event)"/> <br>
+						<p id="p-name"></p>
 					</div>
 					<div class="col2 col">
-						<label for="label-family">*نام خانوادگی</label> <br>
-						<input type="text" name="input-family" class="text-input"/>
+						<label for="label-family">نام خانوادگی*</label> <br>
+						<input type="text" name="input-family" class="text-input" onkeypress="return isPersianChar(event)"/> <br>
+						<p class="p-family"></p>
 					</div>
 				</div> <br>
 				<div class="row">
 					<div class="col1 col">	
 						<label for="label-name">عنوان</label><br>
-						<select class="select-input">
+						<select class="select-input" name="input-gender">
 							<option value="0">- انتخاب کنید -</option>
 							<option value="1">آقا</option>
 							<option value="2">خانم</option>
 							<option value="3">غیره</option>
-						</select>					
+						</select><br>
+						<p class="p-gender">vxcvxcv</p>					
 					</div>
 					<div class="col2 col">
 						<label for="label-english-name">نام و نام خانوادگی انگلیسی</label> <br>
-						<input type="text" name="input-english-name" class="text-input"/>
+						<input type="text" dir="ltr" name="input-english-name" class="text-input" onkeypress="return isEnglishChar(event)"/><br>
+						<p class="p-english-name"></p>
 					</div>
 				</div> <br>
 				<div class="row">
 					<div class="col1 col ">	
 						<label for="label-email">پست الکترونیکی*</label> <br>
-						<input type="text" name="input-email" class="text-input"/>
+						<input type="text" dir="ltr" name="input-email" class="text-input"/><br>
+						<p class="p-email"></p>
 					</div>
 					<div class="col2 col ">	
 						<label for="label-phone">شماره تلفن همراه*</label> <br>
-						<input type="text" name="input-phone" class="text-input"/>
+						<input type="text" dir="ltr" name="input-phone" class="text-input" onkeypress="return isNumber(event)"/><br>
+						<p class="p-phone"></p>
 					</div>
 				</div> <br>
 				<div class="row">
 					<div class="col1 col">	
 						<label for="label-code">کد ملی</label><br>
-						<input type="text" name="input-code" class="text-input"/>					
+						<input type="text" dir="ltr" name="input-code" class="text-input" onkeypress="return isNumber(event)"/> <br>
+						<p class="p-code"></p>			
 					</div>
 					<div class="col2 col">
 						<label for="label-password">*رمز عبور</label> <br>
-						<input type="text" name="input-passowrd" class="text-input"/>
+						<input type="password" dir="ltr" name="input-passowrd" class="text-input"/> <br>
+						<p class="p-password"></p>
 					</div>
 				</div> <br>
 				<div class="row">
 					<div class="col1 col">	
 						<label for="label-pass-repeat">تکرار رمز عبور*</label><br>
-						<input type="text" name="input-pass-repeat" class="text-input"/>					
+						<input type="password" dir="ltr" name="input-pass-repeat" class="text-input"/> <br>
+						<p class="p-pass-repeat"></p>			
 					</div>
 					<div class="col2 col">
 						<label for="label-bd">تاریخ تولد</label> <br>
-						<input type="text" name="input-bd" class="text-input"/>
+						<input type="text" dir="ltr" name="input-bday" class="text-input" onkeypress="return isNumber(event)"/> <br>
+						<p class="p-bday"></p>
 					</div>
 				</div> <br>
 				<div class="row">
 					<div class="col1 col col1-add">	
 						<label for="label-add">آدرس</label><br>
-						<input type="text" name="input-add" class="text-input add-input"/>
+						<input type="text" name="input-add" class="text-input add-input"/><br>
+						<p class="p-add"></p>
 					</div>
 				</div> <br>
 				<div class="row">
 					<div class="col1 col col1-radio">
-						<label for="label-gender">وضعیت تأهل*</label><br>
-						<input type="radio" name="input-radio" class="radio-input ardio-input1">مجرد</input>
-						<input type="radio" name="input-radio" class="radio-input radio-input2">متأهل</input>
+						<label for="label-rel">وضعیت تأهل*</label><br>
+						<input type="radio" name="input-radio" class="radio-input ardio-input1" value="snigle">مجرد</input>
+						<input type="radio" name="input-radio" class="radio-input radio-input2" value="couple">متأهل</input><br>
+						<p class="p-rel"></p>
 					</div>
 					<div class="col2 col col-fav">
-						<label for="label-gender">علاقه‌مندی‌ها</label><br>
+						<label for="label-fav">علاقه‌مندی‌ها</label><br>
 						<input type="checkbox" name="input-checkbox1" id="checkbox1" class="radio-input radio-input1">کتاب</input>
 						<input type="checkbox" name="input-checkbox2" id="checkbox2" class="radio-input radio-input2">فیلم</input>
-						<input type="checkbox" name="input-checkbox3" id="checkbox3" class="radio-input radio-input3">موسیقی</input>
+						<input type="checkbox" name="input-checkbox3" id="checkbox3" class="radio-input radio-input3">موسیقی</input><br>
+						<p class="p-fav"></p>
 					</div>
 				</div> <br>
 				<div class="row">
 					<div class="col1 col col-submit">
-						<input type="submit" value="ثبت‌نام" onClick="return validate();">
+						<input type="submit" value="ثبت‌نام" onclick="return validation();">
 					</div>
 				</div> <br>
 			</form>
